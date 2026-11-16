@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VivaSP | Início</title>
+    
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO & NAVEGAÇÃO PRINCIPAL -->
+
+    <header class="header">
+        <div class="header-container">
+            <!-- Logo VivaSP -->
+            <a href="#" class="logo" aria-label="VivaSP Página Inicial">
+                <span class="logo-viva">Viva</span><span class="logo-sp">SP</span>
+            </a>
+
+            <!-- Menu de Navegação -->
+            <nav class="nav-menu" aria-label="Navegação principal">
+                <ul class="nav-list">
+                    <li class="nav-item active">
+                        <span class="nav-dot" aria-hidden="true"></span>
+                        <a href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#planos">Planos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#rotas">Rotas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#mapa">Mapa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#equipe">Equipe</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!--HERO SECTION (Banner Principal com Busca e Filtros)-->
+
+        <section id="inicio" class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-container">
+                <span class="hero-tag">Vivendo com a viagem certa</span>
+
+                <h1 class="hero-title">
+                    Descubra o brasil <br>com rotas acessiveis para todos
+                </h1>
+
+                <p class="hero-description">
+                    Explore passeios 100% gratuitos e experiências precificadas com estimativa detalhada de custos, rotas com acessibilidade motora e visual, e salve suas próprias rotas públicas ou privadas.
+                </p>
+
+                <!-- Barra de Pesquisa e Filtros Rápidos -->
+                <div class="search-box">
+                    <form class="search-form" role="search" action="#" method="get">
+                        <div class="search-input-group search-term">
+                            <input type="text" name="busca" placeholder="Pesquisar passeios, parques ou locais..." aria-label="Pesquisar">
+                        </div>
+
+                        <div class="search-input-group search-category">
+                            <select name="categoria" aria-label="Selecione a Categoria">
+                                <option value="" disabled selected>Categoria</option>
+                                <option value="cultura">Cultura e Museus</option>
+                                <option value="natureza">Parques e Trilhas</option>
+                                <option value="gastronomia">Gastronomia</option>
+                                <option value="historico">Pontos Históricos</option>
+                            </select>
+                        </div>
+
+                        <div class="search-input-group search-price">
+                            <select name="preco" aria-label="Faixa de Preço">
+                                <option value="" disabled selected>Preço</option>
+                                <option value="gratis">Gratuito</option>
+                                <option value="ate-50">Até R$ 50</option>
+                                <option value="ate-100">Até R$ 100</option>
+                                <option value="mais-100">R$ 150+</option>
+                            </select>
+                        </div>
+                    </form>
+
+                    <hr class="search-divider">
+
+                    <!-- Filtros Rápidos -->
+                    <div class="quick-filters">
+                        <span class="quick-filters-label">Filtros rápidos:</span>
+                        <div class="filter-chips">
+                            <button type="button" class="chip">Passeios gratuitos</button>
+                            <button type="button" class="chip">Trilhas e Cachoeiras</button>
+                            <button type="button" class="chip">Cidades &amp; Historia</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <footer>
+        <p class="copyright">Copyright © 2026 VivaSP</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
