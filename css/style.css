@@ -1,0 +1,60 @@
+
+
+
+/*
+header{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+a,ul{
+    text-decoration: none;
+    list-style: none;
+}
+
+nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+
+
+
+.rotas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 40px 5%;
+}
+
+.cardturismo {
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.cardturismo img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+@media (max-width: 900px) {
+    .rotas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .rotas {
+        grid-template-columns: 1fr;
+    }
+}/*
