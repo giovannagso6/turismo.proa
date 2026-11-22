@@ -8,7 +8,6 @@
     
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
     <!-- mapa -->
@@ -31,13 +30,13 @@
                         <a href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="eventos.html">Planos</a>
+                        <a href="eventos.html">Eventos</a>
                     </li>
                     <li class="nav-item">
                         <a href="rotas.html">Rotas</a>
                     </li>
                     <li class="nav-item">
-                        <a href="contatos.html">Mapa</a>
+                        <a href="contatos.html">Contatos</a>
                     </li>
                     <li class="nav-item">
                         <a href="sobre.html">Sobre</a>
@@ -47,21 +46,93 @@
         </div>
     </header>
 
-
-
-
-
-
-
-
-
-    
-
     <body>
 
+        <main>
 
+            <h1>Vamos conversar?</h1>
+            <h2>Sua opinião faz parte da nossa jornada!</h2>
+            <h3>Tem dúvidas, sugestões ou deseja conhecer melhor nosso projeto? Entre em contato com nossa equipe. Será um prazer falar com você!</h3>
 
+     
+      <form id="formulario">
+        
+        <h3>Fale conosco</h3>
+        <p>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required>
+        </p>
+            
+        <p>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+        </p> 
 
+        <p>
+            <label for="telefone">telefone</label>
+            <input type="tel" id="telefone" name="telefone">
+        </p>
+        
+        <p>
+          <label for="assunto">Assunto</label> 
+          <select name="assunto" id="assunto">
+            <option>Orçamento</option>
+            <option>Dúvida</option>
+            <option>Outro</option>
+            
+          </select> 
+        </p>
+ 
+        <p>
+            <label for="mensagem">Mensagem</label>
+            <textarea name="mensagem" id="mensagem"></textarea>
+        </p>
+     
+    <button type="submit">Enviar</button>
+    
+    <p id="resposta"></p>    </form>
+
+    <h3>Dias e horários para entrar em contato</h3>
+
+<table class="tabela-horarios">
+    <thead>
+        <tr>
+            <th>Dia da semana</th>
+            <th>Horário de funcionamento</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Segunda-feira</td>
+            <td>09h às 17h</td>
+        </tr>
+        <tr>
+            <td>Terça-feira</td>
+            <td>09h às 17h</td>
+        </tr>
+        <tr>
+            <td>Quarta-feira</td>
+            <td>09h às 17h</td>
+        </tr>
+        <tr>
+            <td>Quinta-feira</td>
+            <td>09h às 17h</td>
+        </tr>
+        <tr>
+            <td>Sexta-feira</td>
+            <td>09h às 17h</td>
+        </tr>
+        <tr>
+            <td>Sábado</td>
+            <td>08h às 16h</td>
+        </tr>
+        <tr>
+            <td>Domingo</td>
+            <td>Fechado</td>
+        </tr>
+    </tbody>
+</table>
 
 
 
@@ -75,6 +146,7 @@
         para sua praticidade e segurança!
     </p>
 </div>
+</main>
 
 <footer class="footer">
 
@@ -131,45 +203,6 @@
     </div>
 
 </footer>
-
-        
-
-
-
-
-
-
-
-
-
-
+<script src="js/script.js"></script>
     </body>
-</html>
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </body>
-    <footer>
-        <p class="copyright">Copyright © 2026 VivaSP</p>
-    </footer>
-    <script src="js/script.js"></script>
 </html>
