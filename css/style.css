@@ -10,16 +10,164 @@
 }
 
 header{
-  gap: 30px;
+  gap: 15px;
   background-color: white;
+  color: black;
+  font-size: 15px;
+  text-align: left;
 }
+.avalie{
+    display:flex;
+    width: 50%;
+    height: auto;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.20);
+    border-radius: 15px;
+    margin-top: 10px;
 
-
+}
+.avaliacoes{
+    background-color: rgb(238, 238, 130);
+    width: 50%;
+}
 body {
   margin: 0;
   background-color: whitesmoke;
 
 
+}
+.logo-sp{
+    font-size: 30px;
+    color: #C24C81;
+}span{
+    color: black;
+    font-size: 30px;
+}
+
+/*estilização da página de eventos */
+
+/* CONFIGURAÇÃO GERAL */
+.eventos {
+    padding: 60px 5%;
+    background-color: #f8f7fc;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* CABEÇALHO */
+.eventos-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.eventos-header h1 {
+    color: #33317C;
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.eventos-header h2 {
+    color: #C24C81;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.eventos-header p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* CONTAINER DOS CARDS */
+.eventos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* CARDS */
+.evento {
+    background-color: #fff;
+    width: calc(33.333% - 20px);
+    min-width: 280px;
+    max-width: 380px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(51, 49, 124, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-bottom: 5px solid #F7CA75;
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+.evento:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 22px rgba(51, 49, 124, 0.2);
+}
+
+/* IMAGENS */
+.evento img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+/* CONTEÚDO */
+.evento-conteudo {
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.evento h3 {
+    color: #33317C;
+    font-size: 21px;
+    margin-bottom: 18px;
+    line-height: 1.4;
+}
+
+.evento p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.evento p strong {
+    color: #C24C81;
+}
+
+/* DESCRIÇÃO */
+.evento .descricao {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+/* BOTÕES */
+.btn-eventos {
+    display: block;
+    margin-top: auto;
+    padding: 12px 18px;
+    background-color: #33317C;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.btn-eventos:hover {
+    background-color: #C24C81;
+    color: #fff;
 }
 
 
@@ -44,16 +192,6 @@ body {
 .tabela-horarios tr:hover {
     background-color: #f2f2f2;
 }
-
-    /*para colocar iamgem de fundo
-background-image: url("/img/masp.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    min-height: 400px;
-
-
 
 /* form */
 
@@ -85,6 +223,60 @@ form{
      'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/* estilização icon redes sociais div "dev" */
+.social-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.social-icons a {
+    color: #333;
+    font-size: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #0077b5;
+    transform: scale(1.2);
+}
+
+/* Cor específica do GitHub */
+.social-icons a:last-child:hover {
+    color: #6e5494;
+}
+
+/*estilização redes sociais do footer */
+
+.redes-sociais-footer {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.redes-sociais-footer a {
+    font-size: 30px;
+    color: #333;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.redes-sociais-footer a:hover {
+    transform: scale(1.2);
+}
+
+.redes-sociais-footer a:nth-child(1):hover {
+    color: #E4405F;
+}
+
+.redes-sociais-footer a:nth-child(2):hover {
+    color: #43E660;
+}
+
+.redes-sociais-footer a:nth-child(3):hover {
+    color: #0A66C2;
+}
 
 
 a,ul{
@@ -380,5 +572,44 @@ nav ul{
 @media (max-width: 600px) {
     .rotas {
         grid-template-columns: 1fr;
+    }
+}
+/* RESPONSIVIDADE - TABLETS */
+@media (max-width: 900px) {
+    .evento {
+        width: calc(50% - 15px);
+    }
+
+    .eventos-header h1 {
+        font-size: 30px;
+    }
+}
+
+/* RESPONSIVIDADE - CELULARES */
+@media (max-width: 600px) {
+    .eventos {
+        padding: 40px 5%;
+    }
+
+    .eventos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .evento {
+        width: 100%;
+        max-width: 420px;
+    }
+
+    .eventos-header h1 {
+        font-size: 26px;
+    }
+
+    .eventos-header h2 {
+        font-size: 19px;
+    }
+
+    .evento img {
+        height: 200px;
     }
 }
