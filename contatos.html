@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VivaSP | Contatos</title>
+    
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+  <body>
+    <!-- CABEÇALHO & NAVEGAÇÃO PRINCIPAL -->
+
+    <header class="header">
+        <div class="header-container">
+            <!-- Logo VivaSP -->
+            <a href="#" class="logo" aria-label="VivaSP Página Inicial">
+                <span class="logo-viva">Viva</span><span class="logo-sp">SP</span>
+            </a>
+
+            <!-- Menu de Navegação -->
+            <nav class="nav-menu" aria-label="Navegação principal">
+                <ul class="nav-list">
+                        
+                    <li class="nav-item">
+                        <a href="login.html">Login</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="sobre.html">Sobre</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="eventos.html">Eventos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="rotas.html">Rotas</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="mapas.html">Mapas</a>
+                    </li>
+                   
+                <li class="nav-item active">
+                <span class="nav-dot" aria-hidden="true"></span>
+                <a href="contatos.html">Contatos</a>
+                </li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+ <main>
+
+<h1>Sua opinião faz parte da nossa jornada!</h1>
+<p class="subtitulo">Tem dúvidas, sugestões ou quer conhecer melhor o nosso projeto? 
+Entre em contato com a nossa equipe. Será um prazer conversar com você!</p>
+
+     <section class="formulario-contato">
+    
+        <div class="coluna-formulario">
+        <h2>Fale conosco</h2>
+        <form id="formulario">
+        <p>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required>
+        </p>
+            
+        <p>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+        </p> 
+
+        <p>
+            <label for="telefone">telefone</label>
+            <input type="tel" id="telefone" name="telefone">
+        </p>
+        
+        <p>
+          <label for="assunto">Assunto</label> 
+          <select name="assunto" id="assunto">
+            <option>Orçamento</option>
+            <option>Dúvida</option>
+            <option>Outro</option>
+            
+          </select> 
+        </p>
+ 
+        <p>
+            <label for="mensagem">Mensagem</label>
+            <textarea name="mensagem" id="mensagem" rows="5" placeholder="Digite sua mensagem aqui..."></textarea>
+        </p>
+     
+    <button type="submit">Enviar</button>
+    <p id="resposa"></p>
+ </form>
+ </div>
+
+    <div class="coluna-informacoes">
+        <h2>Horários de atendimento</h2>
+<table class="tabela-horarios">
+    
+    <thead>
+        <tr>
+            <th>Dia da semana</th>
+            <th>Horário de funcionamento</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr>
+            <td>Segunda-feira</td>
+            <td>09h às 17h</td>
+        </tr>
+        <tr>
+            <td>Terça-feira</td>
+            <td>09h às 17h</td>
+        </tr>
+        <tr>
+            <td>Quarta-feira</td>
+            <td>09h às 17h</td>
+        </tr>
+        <tr>
+            <td>Quinta-feira</td>
+            <td>09h às 17h</td>
+        </tr>
+        <tr>
+            <td>Sexta-feira</td>
+            <td>09h às 17h</td>
+        </tr>
+        <tr>
+            <td>Sábado</td>
+            <td>08h às 16h</td>
+        </tr>
+        <tr>
+            <td>Domingo</td>
+            <td>Fechado</td>
+        </tr>
+    </tbody>
+</table>
+      <!-- mapa -->
+     <div class="mapBox"></div>
+</div>
+
+<div class="chamada-footer">
+    </section>
+    <p>
+        Fique por dentro de tudo que ainda está por vir no
+        <strong>Viva <em class="sp">SP!</em></strong> ferramentas ainda virão
+        para sua praticidade e segurança!
+    </p>
+</div>
+</main>
+
+<footer class="footer">
+
+    <div class="footer-logo">
+
+        <div class="vivaspfooter">
+        <h2>VIVA SP</h2>
+        <p>Vivendo com a viagem certa</p></div>
+
+        <!-- Instagram -->
+    <a href="https://www.instagram.com/vivasp.platform/" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <!-- Linktree -->
+    <a href="https://linktr.ee/vivasp.platform" target="_blank">
+        <i class="fa-solid fa-link"></i>
+    </a>
+
+    <!-- github -->
+    <a href="https://github.com/giovannagso6/turismo.proa" target="_blank">
+        <i class="fa-brands fa-github"></i>
+    </a>
+
+</div>
+        <p class="copyright">Copyright © 2026 VivaSP</p>
+
+    <div class="footer-links">
+        <h3>Empresa</h3>
+        <ul>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="#">Termos de uso</a></li>
+            <li><a href="#">Responsáveis técnicos</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-links">
+        <h3>Fale conosco</h3>
+        <ul>
+            <li><a href="contatos.html">Contato</a></li>
+            <li><a href="contatos.html">Dúvidas</a></li>
+            <li><a href="#">Parceiros e contribuidores</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-newsletter">
+        <h3>Esteja por dentro das <strong>novidades!</strong></h3>
+
+        <form>
+            <input type="email" id="email" placeholder="Seu E-mail" required>
+            <button type="submit">Me inscrever</button>
+        </form>
+
+        <em>Políticas e termos de uso</em>
+    </div>
+
+</footer>
+<script src="js/script.js"></script>
+    </body>
+</html>
