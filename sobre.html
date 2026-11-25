@@ -1,16 +1,15 @@
-<!-- <-- <!DOCTYPE html>
+<!-- <!DOCTYPE html>-->
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VivaSP | Equipe</title>
+    <title>VivaSP | Início</title>
     
-    <-- Estilos CSS -->
+    <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
 
 </head>
 
@@ -20,6 +19,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     <!-- CABEÇALHO & NAVEGAÇÃO PRINCIPAL -->
 
     <header class="header">
+         <button class="menu-toggle" id="menu-toggle"
+            aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+      ☰
+    </button>
         <div class="header-container">
             <!-- Logo VivaSP -->
             <a href="#" class="logo" aria-label="VivaSP Página Inicial">
@@ -31,7 +34,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
                 <ul class="nav-list">
                     <li class="nav-item active">
                         <span class="nav-dot" aria-hidden="true"></span>
-                       <a href="index.html">Inicio</a>
+                         
+                        <li class="nav-item">
+                        <a href="login.html">Login</a>
+                    </li>
+                         <li class="nav-item">
+                        <a href="index.html">Inicio</a>
                     </li>
 
                     <li class="nav-item">
@@ -41,8 +49,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
                     <li class="nav-item">
                         <a href="eventos.html">Eventos</a>
                     </li>
+                    
                     <li class="nav-item">
                         <a href="rotas.html">Rotas</a>
+                    </li>
+                     <li class="nav-item">
+                        <a href="mapa.html">Mapa</a>
                     </li>
                     <li class="nav-item">
                         <a href="contatos.html">Contatos</a>

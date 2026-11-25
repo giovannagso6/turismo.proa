@@ -9,13 +9,65 @@
   box-sizing: border-box;
 }
 
-header{
-  gap: 15px;
-  background-color: white;
-  color: black;
-  font-size: 15px;
-  text-align: left;
+header {
+    width: 100%;
+    background:#33317C;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 11px 17px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.nav-item a:hover {
+    background:#C24F7E;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Destaque do login */
+.nav-item:first-child a {
+    background: #C24F7E;
+    border: 1px solid #C24F7E;
+}
+
+.nav-item:first-child a:hover {
+    background:#33317C;
+    border-color: var(#33317C);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .nav-item a {
+        font-size: 13px;
+        padding: 9px 12px;
+    }
+}
+;
+
 .avalie{
     display:flex;
     width: 50%;
@@ -32,12 +84,21 @@ header{
 }
 body {
   margin: 0;
-  background-color: whitesmoke;
+  background-color: whitesmoke;}
 
 
+.logo-viva{
+   font-size: 50px;
+   background: linear-gradient(
+        90deg,
+        #33317C,
+        #C24F7E,
+        #F7CA75
+    );
 }
+
 .logo-sp{
-    font-size: 30px;
+    font-size: 50px;
     color: #C24C81;
 }span{
     color: black;
