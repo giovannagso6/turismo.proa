@@ -4,17 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VivaSP | Mapa</title>
+    <title>VivaSP | Contatos</title>
     
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax
-    /libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
-    <!-- mapa -->
-     <div class="mapBox"></div>
-
+  <body>
     <!-- CABEÇALHO & NAVEGAÇÃO PRINCIPAL -->
 
     <header class="header">
@@ -27,12 +24,12 @@
             <!-- Menu de Navegação -->
             <nav class="nav-menu" aria-label="Navegação principal">
                 <ul class="nav-list">
-                    <li class="nav-item active">
-                        <span class="nav-dot" aria-hidden="true"></span>
                         
-                        <li class="nav-item">
+                    <li class="nav-item">
                         <a href="login.html">Login</a>
                     </li>
+                    
+                    <li class="nav-item">
                         <a href="index.html">Inicio</a>
                     </li>
 
@@ -43,6 +40,7 @@
                     <li class="nav-item">
                         <a href="eventos.html">Eventos</a>
                     </li>
+
                     <li class="nav-item">
                         <a href="rotas.html">Rotas</a>
                     </li>
@@ -50,28 +48,28 @@
                     <li class="nav-item">
                         <a href="mapas.html">Mapas</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="contatos.html">Contatos</a>
-                    </li>
                    
+                <li class="nav-item active">
+                <span class="nav-dot" aria-hidden="true"></span>
+                <a href="contatos.html">Contatos</a>
+                </li>
+
                 </ul>
             </nav>
         </div>
     </header>
 
-    <body>
+ <main>
 
-        <main>
+<h1>Sua opinião faz parte da nossa jornada!</h1>
+<p class="subtitulo">Tem dúvidas, sugestões ou quer conhecer melhor o nosso projeto? 
+Entre em contato com a nossa equipe. Será um prazer conversar com você!</p>
 
-           <h1>Vamos conversar?</h1>
-<h2>Sua opinião faz parte da nossa jornada!</h2>
-<h3>Tem dúvidas, sugestões ou quer conhecer melhor o nosso projeto? 
-Entre em contato com a nossa equipe. Será um prazer conversar com você!</h3>
-
-     
-      <form id="formulario">
-        
-        <h3>Fale conosco</h3>
+     <section class="formulario-contato">
+    
+        <div class="coluna-formulario">
+        <h2>Fale conosco</h2>
+        <form id="formulario">
         <p>
             <label for="nome">Nome</label>
             <input type="text" id="nome" name="nome" required>
@@ -99,24 +97,26 @@ Entre em contato com a nossa equipe. Será um prazer conversar com você!</h3>
  
         <p>
             <label for="mensagem">Mensagem</label>
-            <textarea name="mensagem" id="mensagem"></textarea>
+            <textarea name="mensagem" id="mensagem" rows="5" placeholder="Digite sua mensagem aqui..."></textarea>
         </p>
      
     <button type="submit">Enviar</button>
-    
-    <p id="resposta"></p>    </form>
+    <p id="resposa"></p>
+ </form>
+ </div>
 
-    <h3>Dias e horários para entrar em contato</h3>
-
+    <div class="coluna-informacoes">
+        <h2>Horários de atendimento</h2>
 <table class="tabela-horarios">
+    
     <thead>
         <tr>
             <th>Dia da semana</th>
             <th>Horário de funcionamento</th>
         </tr>
     </thead>
-
     <tbody>
+
         <tr>
             <td>Segunda-feira</td>
             <td>09h às 17h</td>
@@ -147,13 +147,12 @@ Entre em contato com a nossa equipe. Será um prazer conversar com você!</h3>
         </tr>
     </tbody>
 </table>
-
-
-
-
-
+      <!-- mapa -->
+     <div class="mapBox"></div>
+</div>
 
 <div class="chamada-footer">
+    </section>
     <p>
         Fique por dentro de tudo que ainda está por vir no
         <strong>Viva <em class="sp">SP!</em></strong> ferramentas ainda virão
@@ -187,7 +186,6 @@ Entre em contato com a nossa equipe. Será um prazer conversar com você!</h3>
 
 </div>
         <p class="copyright">Copyright © 2026 VivaSP</p>
-    </div>
 
     <div class="footer-links">
         <h3>Empresa</h3>
